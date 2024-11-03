@@ -29,6 +29,8 @@ jobs:
     - name: Set GOVERSION environment variable (Windows)
       if: runner.os == 'Windows'
       run: echo "GOVERSION=$(go version)" | Out-File -FilePath $env:GITHUB_ENV -Append
+    - name: Download dependencies
+      run: go mod tidy
     - name: Build & Test
       run: |
         go build -v
