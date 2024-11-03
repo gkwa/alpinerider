@@ -6,14 +6,14 @@ require (
 	dario.cat/mergo v1.0.1
 	github.com/fatih/color v1.18.0
 	github.com/go-git/go-git/v5 v5.12.0
-	github.com/go-logr/logr v1.4.2
+	github.com/go-logr/logr v1.4.1
 	github.com/go-logr/zerologr v1.2.3
 	github.com/google/go-containerregistry v0.20.2
 	github.com/magefile/mage v1.15.0
 	github.com/rs/zerolog v1.33.0
 	github.com/spf13/cobra v1.8.1
 	github.com/spf13/viper v1.19.0
-	sigs.k8s.io/controller-runtime v0.19.1
+	sigs.k8s.io/controller-runtime v0.18.5
 )
 
 require (

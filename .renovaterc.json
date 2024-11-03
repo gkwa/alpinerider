@@ -6,7 +6,7 @@
   "packageRules": [
     {
       "automerge": true,
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest", "replacement"],
+      "matchUpdateTypes": [""],
       "recreateWhen": "always"
     }
   ],
