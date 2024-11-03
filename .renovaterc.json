@@ -5,11 +5,6 @@
   "prConcurrentLimit": 0,
   "packageRules": [
     {
-      "matchDepTypes": ["indirect"],
-      "enabled": true,
-      "matchManagers": ["gomod"]
-    },
-    {
       "automerge": true,
       "matchUpdateTypes": ["minor", "patch", "pin", "digest", "replacement"],
       "recreateWhen": "always"
