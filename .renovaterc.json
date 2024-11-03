@@ -1,31 +1,30 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended",
+    "config:best-practices",
     ":dependencyDashboard"
   ],
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
   "packageRules": [
     {
+      "automerge": true,
       "matchUpdateTypes": [
         "minor",
         "patch",
         "pin",
-        "digest"
+        "digest",
+        "replacement"
       ],
-      "automerge": true,
-      "automergeStrategy": "squash",
-      "automergeType": "pr",
-      "ignoreTests": false,
-      "matchDepTypes": [
-        "*"
-      ]
+      "recreateWhen": "always"
     }
   ],
   "platformAutomerge": true,
   "postUpdateOptions": [
     "gomodTidy",
     "gomodUpdateImportPaths"
+  ],
+  "ignorePaths": [
+    "**/testdata/go.mod"
   ]
 }
