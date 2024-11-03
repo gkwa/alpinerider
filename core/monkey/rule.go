@@ -1,9 +1,6 @@
 package monkey
 
-import (
-	"github.com/gkwa/alpinerider/core/common"
-	"github.com/gkwa/alpinerider/internal/types"
-)
+import "github.com/gkwa/alpinerider/core/types"
 
 var Rule = types.PackageRule{
 	Automerge:         true,
@@ -13,5 +10,11 @@ var Rule = types.PackageRule{
 	MatchDepTypes: []string{
 		"*",
 	},
-	MatchUpdateTypes: append(common.MatchUpdateTypes, "replacement"),
+	MatchUpdateTypes: []string{
+		"minor",
+		"patch",
+		"pin",
+		"digest",
+		"replacement",
+	},
 }

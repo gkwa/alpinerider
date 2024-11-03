@@ -1,9 +1,6 @@
 package cat
 
-import (
-	"github.com/gkwa/alpinerider/core/common"
-	"github.com/gkwa/alpinerider/internal/types"
-)
+import "github.com/gkwa/alpinerider/core/types"
 
 var Rule = types.PackageRule{
 	RangeStrategy:     "pin",
@@ -14,5 +11,10 @@ var Rule = types.PackageRule{
 	MatchDepTypes: []string{
 		"*",
 	},
-	MatchUpdateTypes: common.MatchUpdateTypes,
+	MatchUpdateTypes: []string{
+		"minor",
+		"patch",
+		"pin",
+		"digest",
+	},
 }

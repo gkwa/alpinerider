@@ -1,12 +1,14 @@
 package dog
 
-import (
-	"github.com/gkwa/alpinerider/core/common"
-	"github.com/gkwa/alpinerider/internal/types"
-)
+import "github.com/gkwa/alpinerider/core/types"
 
 var Rule = types.PackageRule{
-	Automerge:        true,
-	RecreateWhen:     "always",
-	MatchUpdateTypes: common.MatchUpdateTypes,
+	Automerge:    true,
+	RecreateWhen: "always",
+	MatchUpdateTypes: []string{
+		"minor",
+		"patch",
+		"pin",
+		"digest",
+	},
 }

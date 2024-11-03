@@ -20,4 +20,6 @@ type PackageRule struct {
 	MatchDepTypes     []string `json:"matchDepTypes,omitempty"`
 	MatchUpdateTypes  []string `json:"matchUpdateTypes,omitempty"`
 	RecreateWhen      string   `json:"recreateWhen,omitempty"`
+	Enabled           bool     `json:"enabled,omitempty"`
+	MatchManagers     []string `json:"matchManagers,omitempty"`
 }

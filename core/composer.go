@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"dario.cat/mergo"
-	"github.com/gkwa/alpinerider/internal/types"
+	"github.com/gkwa/alpinerider/core/types"
 )
 
 type ConfigComposer struct {
