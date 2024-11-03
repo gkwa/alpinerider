@@ -11,6 +11,5 @@
     }
   ],
   "platformAutomerge": true,
-  "postUpdateOptions": ["gomodTidyE", "gomodMassage", "gomodUpdateImportPaths"],
-  "ignorePaths": ["**/testdata/go.mod"]
+  "postUpdateOptions": ["gomodTidyE", "gomodMassage", "gomodUpdateImportPaths"]
 }
