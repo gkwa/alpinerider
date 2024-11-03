@@ -6,10 +6,13 @@
   "packageRules": [
     {
       "automerge": true,
-      "matchUpdateTypes": [""],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest", "replacement"],
       "recreateWhen": "always"
     }
   ],
   "platformAutomerge": true,
-  "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"]
+  "postUpdateOptions": [
+    "gomodMassage",
+    "gomodTidyE",
+    "gomodUpdateImportPaths"]
 }

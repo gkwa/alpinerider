@@ -9,7 +9,8 @@ func (c *ConfigComposer) Owl() (types.RenovateConfig, error) {
 	config := c.baseConfig
 	config.PackageRules = []types.PackageRule{owl.Rule}
 	config.PostUpdateOptions = []string{
-		"gomodTidy",
+		"gomodTidyE",
+		"gomodMassage",
 		"gomodUpdateImportPaths",
 	}
 	config.IgnorePaths = []string{
