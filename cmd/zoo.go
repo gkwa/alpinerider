@@ -43,6 +43,17 @@ var zooCmd = &cobra.Command{
 		fmt.Println("-- owl --")
 		owlJson, _ := json.MarshalIndent(owl, "", "  ")
 		fmt.Println(string(owlJson))
+		fmt.Println()
+
+		monkey, err := composer.Monkey()
+		if err != nil {
+			fmt.Printf("Error creating monkey config: %v\n", err)
+			return
+		}
+		fmt.Println("-- monkey --")
+		monkeyJson, _ := json.MarshalIndent(monkey, "", "  ")
+		fmt.Println(string(monkeyJson))
+		fmt.Println()
 	},
 }
 
