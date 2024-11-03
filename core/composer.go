@@ -3,8 +3,8 @@ package core
 import (
 	"fmt"
 
+	"dario.cat/mergo"
 	"github.com/gkwa/alpinerider/internal/types"
-	"github.com/imdario/mergo"
 )
 
 type ConfigComposer struct {
